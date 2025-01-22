@@ -38,7 +38,7 @@ function App() {
         // console.log(res.data.products);
         setProducts(res.data.products);
       } catch (error) {
-        
+        alert(error);
       }
 
     } catch (error) {
@@ -51,7 +51,7 @@ function App() {
       const res = await axios.post(`${BASE_URL}/api/user/check`);
       alert("使用者已登入");
     } catch (error) {
-      console.error(error);
+      alert(error);
     }
   }
 
